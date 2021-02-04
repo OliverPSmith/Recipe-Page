@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    
+    <title>Recipe Page</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>The Online Recipe Page, For Anything & Everything</h1>
+
+        <img class="spag-img" src="images/spaghetti.jpg">
+        <img class="soup-img" src="images/soup.jpg">
+
+        <p class="page-bio">Find recipes for any type of meal, no matter how simple
+             or complicated. If you find some you like, add it to your favourites by clicking
+            the 'Save Me' button.<br> And if you have any recipes yourself, feel free to add them in by 
+            clicking the 'Add Your Own Recipe' button. </p>
+    </header>
+
+    <aside class="saved-recipes">
+        <header class="saved-header">
+            <h3>Saved Recipes</h3>
+        </header>
+
+        <div id="saved-landing">
+            
+        </div>
+    </aside>
+
+    
+
+    <section class="action-section">
+        
+        <h3 class="action-section-header">Search Recipes and Add Your Own</h3>
+        <p class="search-text">Type in here to search <br> for the Recipe you want &#8594;</p>
+        <input type="text" id="search-bar" name="search-bar" placeholder="search for recipes.....">
+        <p class="add-recipe-text">&#8592; Click here <br> to add your own recipe</p>
+        <button id="add-recipe-button" name="add-recipe-button">Add Your Own Recipe</button>
+
+        <div id="myModal" class="modal">
+            <div id="modal-content" class="modal-content" draggable="true">
+                <header id="modal-header"><span id="drag-button" class="drag-button">Double Click Here To Move </span><span id="close-button">&times;</span>
+                    <h4 id="modal-title">Fill In Below To Submit Your Recipe</h4>
+                    <div class="submit-and-refresh">
+                        <button id="submit-button">Submit</button>
+                        <button id="refresh">Refresh</button>
+                    </div>
+                </header>
+
+                <div id="new-recipe-info" class="new-recipe-info">
+
+                    <div class="title-and-notes">
+                        <label class="new-recipe-label" for="title">Title:</label>
+                        <textarea name="title" class="title-input" id="title-input"></textarea>
+
+                        <label class="new-recipe-label" for="recipe-notes">Add Some Notes:</label>
+                        <textarea name="title" class="notes-input" id="notes-input"></textarea>
+                    </div>
+
+
+                    <div class="checking">
+                        <label class="new-recipe-label" for="new-who-can-eat">Who Can Eat?:</label>
+
+                        <label class="new-who-can-eat" for="vegan">Vegan
+                            <input type="text" class="new-checkbox" name="vegan" id="vegan">
+                        </label>
+                        <label class="new-who-can-eat" for="vegetarian">Vegetarian
+                            <input type="text" class="new-checkbox" name="vegetarian" id="vegetarian">
+                        </label>
+                        <label class="new-who-can-eat" for="pescetarian">Pescetarian
+                            <input type="text" class="new-checkbox" name="pescetarian" id="pescy">
+                        </label>
+                    </div>
+
+                    <div class="ingredients-and-method">
+                        <label class="new-recipe-label" for="ingredients" id="ingredients-label">Ingredients:</label>
+                        <textarea name="ingredients" class="new-recipe-info" id="ingredients-input"></textarea>
+
+                        <img class="knife-and-fork" src="images/knife fork spoon.jpg">
+
+                        <label class="new-recipe-label" for="method" id="method-label">Method:</label>
+                        <textarea name="method" class="new-recipe-info" id="method-input"></textarea>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        
+        <div class="new-recipe-land" id="new-recipe-land">
+            <h3 class="new-recipe-header">The Recipes</h3>
+
+            <div class="list-item">
+                <div class="list-item-split">
+                    <div class="recipe-info">
+                        <strong class="title section-title">Beans On Toast</strong>
+                        <p class="new-descripton">Just a quick little recipe for making everyones favourite, Beans on Toast</p>
+                    </div>
+                </div>
+
+                <div class="list-item-split">
+                    <div class="new-who-can-eat">
+                        <strong class="section-title"> Who Can Eat?</strong>
+                        <p>Vegetarian: yes</p>
+                        <p>Vegan: yes</p>
+                        <p>Pescetarian: yes</p>
+
+                        <div class="like-and-save">
+                            <button class="save-button">Save Me</button>
+                            <button class="thumbs-up-button">&#10003;</button>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <div>
+                    <p id="scroll-more">Scroll Down To See More</p>
+                </div>
+                
+                <div class="new-show-more-content">
+                    <div class="new-i-m">
+                        <div class="new-ingredients">
+                            <h5 class="section-title">Ingredients</h5>
+                            <p>Beans, Bread, Butter.</p>
+                        </div>
+                    </div>
+
+                    <div class="new-i-m">
+                        <div class="new-method">
+                            <h5 class="section-title">Method</h5>
+                            <p>Heat the beans up in a pot, put bread in the toaster, take toast out, butter the toast, pour the beans on top.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="list-item-split">
+                    <div class="recipe-info">
+                        <strong class="title section-title">Pasta</strong>
+                        <p class="new-descripton">Just a quick little recipe for making everyones favourite, Pasta</p>
+                    </div>
+                </div>
+
+                <div class="list-item-split">
+                    <div class="new-who-can-eat">
+                        <strong class="section-title"> Who Can Eat?</strong>
+                        <p>Vegetarian: no</p>
+                        <p>Vegan: no</p>
+                        <p>Pescetarian: yes</p>
+
+                        <div class="like-and-save">
+                            <button class="save-button">Save Me</button>
+                            <button class="thumbs-up-button">&#10003;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p id="scroll-more">Scroll Down To See More</p>
+                </div>
+                
+                <div class="new-show-more-content">
+                    <div class="new-i-m">
+                        <div class="new-ingredients">
+                            <h5 class="section-title">Ingredients</h5>
+                            <p>pasta, tomatoes, chorizo, mince, garlic</p>
+                        </div>
+                    </div>
+
+                    <div class="new-i-m">
+                        <div class="new-method">
+                            <h5 class="section-title">Method</h5>
+                            <p>Put everything apart from the pasta together, cook it. Boill the pasta. Mix together</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

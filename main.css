@@ -1,0 +1,415 @@
+
+body {
+   background-color: rgba(255, 200, 80, .3);
+
+}
+
+.main-header {
+    height: 280px;
+    margin-top: 1%;
+    margin-right: .5%; 
+    margin-left: .5%; 
+    margin-bottom: 1.5%;
+    text-align: center;
+    color: rgb(29, 9, 19);
+    background: rgba(207, 114, 25, .4); 
+    position: relative;
+}
+.main-header h1 {
+    position: relative;
+    top: 20%;
+    font-size: 2.5em;
+    font-family: 'Sriracha', cursive;
+}
+.main-header .page-bio {
+    position: relative;
+    top: 30%;
+    font-size: 1.5em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.spag-img {
+   height: 150px;
+   width: 150px;
+   position: absolute;
+   float: left;
+   top: 20px;
+   right: 20px;
+   border-radius: 2%;
+   padding: 2px;
+   border-radius: 5%;
+}
+.soup-img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    float: right;
+    top: 20px;
+    left: 20px;
+    border-radius: 2%;
+    padding: 2px;
+    border-radius: 5%;
+ }
+
+
+
+
+
+/* favourited section */
+.saved-recipes {
+    background-color: rgba(207, 114, 25, .4); 
+    float: right;
+    width: 32%;
+    height: 40em;
+    margin-right: .5%;
+    text-align: center;
+    overflow: scroll;
+}
+
+.saved-header {
+    border-bottom: 2px solid black; 
+    font-family: 'Sriracha', cursive;
+}
+
+.saved-landing {
+    width: 100%;
+    height: 50em;
+   
+    padding-top: 10px;
+    
+}
+
+#saved-landing .list-item {
+    position: relative;
+    padding: 2px;
+}
+
+.remove-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    right: 5px;
+}
+
+#saved-landing .list-item .thumbs-up-button {
+    display: none;
+}
+
+#saved-landing .list-item .new-save-button{
+    display: none;
+}
+#saved-landing .list-item .save-button {
+    display: none;
+}
+
+
+
+
+/* action buttons section */ 
+.action-section {
+    background-color: rgba(207, 114, 25, .4); 
+    float: left;
+    width: 65%;
+    height: 10em;
+    margin-left: .5%;
+    text-align: center;
+    position: relative;
+}
+
+.action-section-header {
+    font-family: 'Sriracha', cursive;
+    position: relative;
+}
+
+#search-bar {
+    position: relative;
+    bottom: 45px;
+    right: 15%;
+    height: 40px;
+    font-size: 1.5em;
+    border-radius: 3%;
+    background-color: rgb(248, 241, 241);
+}
+#search-bar:hover {
+    background-color: white;
+}
+
+#add-recipe-button {
+    position: relative;
+    bottom: 161px;
+    left: 15%;
+    height: 45px;
+    font-size: 1.5em;
+    border-radius: 3%;
+    background-color: rgb(248, 241, 241);
+}
+#add-recipe-button:hover {
+    background-color: white;
+}
+
+.search-text {
+    position: relative;
+    top: 10px;
+    right: 450px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+.add-recipe-text {
+    position: relative;
+    bottom: 105px;
+    left: 450px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: blanchedalmond;
+    position: relative;
+    margin: auto;
+    height: 550px;
+    min-height: 200px;
+    width: 70%;
+    min-width: 55%;
+    background-origin: 1px solid #888;
+    overflow: scroll;
+    font-size: 1.2em;
+}
+
+#modal-header {
+    width: 100%;
+    height: 15%;
+    background-color: cornsilk;
+}
+#modal-title {
+    position: absolute;
+    left: 38%;
+}
+
+.submit-and-refresh {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+#submit-button {
+    height: 25px;
+    width: 100px;
+}
+#submit:hover {
+    background: lightblue;
+}
+#refresh {
+    height: 25px;
+    width: 100px;
+}
+
+.drag-button {
+    float: left;
+    font-style: italic;
+    margin-left: 2px;
+}
+#close-button {
+    float: right;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+
+.title-and-notes {
+    position: relative;
+    height: 150px;
+    width: 45%;
+    top: 15px;
+    float: left;
+    left: 20px;
+    border: 1px solid black;
+    background-color: cornsilk;
+}
+.title-input {
+    position: relative;
+    display: block;
+    left: 32%;
+    width: 200px;
+}
+.notes-input {
+    position: relative;
+    display: block;
+    left: 22%;
+    width: 300px;
+    height: 50px;
+}
+
+.checking {
+    position: relative;
+    height: 150px;
+    width: 45%;
+    top: 15px;
+    float: right;
+    right: 20px;
+    border: 1px solid black;
+    background-color: cornsilk;
+}
+.new-who-can-eat {
+    display: block;
+    padding: 5px;
+}
+
+.ingredients-and-method {
+    position: relative;
+    height: 200px;
+    width: 90%;
+    top: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: cornsilk;
+    margin-bottom: 10px;
+}
+
+#ingredients-input {
+    position: relative;
+    width: 300px;
+    height: 120px;
+    float: left;
+    left: 20px;
+    bottom: 100px;
+}
+#ingredients-label {
+    position: relative;
+    right: 45%;
+    top: 10px;
+}
+
+#method-input {
+    position: relative;
+    width: 300px;
+    height: 120px;
+    float: right;
+    right: 20px;
+    bottom: 100px;
+}   
+#method-label {
+    position: relative;
+    left: 25%;
+    bottom: 10px;
+}
+
+.knife-and-fork {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    left: 45%;
+    top: 25%;
+    border-radius: 4%;
+}
+
+
+
+
+
+
+/* Main recipe feed section */
+main {
+    background-color: rgba(207, 114, 25, .4); 
+    float: left;
+    width: 65%;
+    height: 70em;
+    margin-top: 1%;
+    margin-left: .5%; 
+    text-align: center;
+}
+
+.new-recipe-header {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.5em;
+}
+
+
+.new-recipe-land {
+    width: 100%;
+    height: 60em;
+
+    padding-top: 10px;
+    overflow: scroll;
+}
+
+.list-item {
+    margin: 10px;
+    background-color: floralwhite;
+    width: 90%;
+    height: 16em;
+    overflow: scroll;
+    border-radius: 8px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 600;
+    z-index: auto;
+}
+.list-item p {
+    font-size: 1.2em;
+}
+.list-item:hover {
+    background-color: honeydew;
+}
+
+.list-item-split {
+    float: left;
+    width: 40%;
+    height: 80%;
+    margin-top: 5px;
+    position: relative;
+}
+
+
+
+.section-title {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.5em;
+}
+
+
+#scroll-more {
+    border-bottom: 2px solid black;
+    font-size: 1em;
+}
+
+.new-i-m {
+    float: left;
+    width: 50%;
+    height: 15em;
+}
+
+.like-and-save {
+    position: relative;
+    left: 300px;
+    top: 20px;
+}
+.like-and-save .save-button {
+    position: relative;
+    bottom: 170px;
+    left: 90px;
+}
+.like-and-save .thumbs-up-button {
+    position: relative;
+    bottom: 10px;
+    left: 50px;
+}
+
+.new-save-button {
+    position: relative;
+    bottom: 170px;
+    left: 90px;
+}
